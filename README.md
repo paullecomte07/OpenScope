@@ -1,5 +1,9 @@
 This project is under [GPLv3] (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
+:sparkles: Soon will be released a roadmap defining the future of the project :sparkles:
+
+If you are interested in the project or have remarks feel free to contact me : paullecomte07@gmail.com
+
 ![Alt text](https://github.com/paullecomte07/OpenScope/blob/master/.rdm_pictures/logo.png)
 
 
