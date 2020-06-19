@@ -1,0 +1,13 @@
+.button{
+ background-color: darkgreen; 
+font-family: monospace; padding: 20px; background-color: blueviolet; width: fit-content; height: fit-content; border-radius: 16px; margin: 20px;
+}
+
+h1 { font-family: monospace; text-align: center; }
+
+
+.container {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+    <title>Demonstration</title>
+  </head>
+  <body style="background-color: lightgray;">
+    <h1 style="text-align: center;">Serveur visualisation jumelle</h1>
+    <div class='container'>
+	<img src="{{ url_for('video_feed') }}">
+    </div>
+<div id = "time" class="container"> </div>
+    <div class='container'>
+      <h2 style='background-color: darkgreen;' class='button' id='gauche'>Gauche</h2>
+      <h2 style='background-color: darkgreen;' class='button' id='droite'>Droite</h2>
+      <h2 style='background-color: darkred;'class='button' id='save'>Enregistrer</h2>
+    </div>
+   </body>
+</html>
+
+<script type="text/javascript">
+
+
+var request = new XMLHttpRequest();
+
+
+document.querySelector('#gauche').addEventListener('click',()=>{
+request.open('GET', '/commande/gauche', true);
+console.log("gauche");
+request.send()
+});
+
+document.querySelector('#droite').addEventListener('click',()=>{
+request.open('GET', '/commande/droite', true);
+console.log("droite");
+request.send()
+});
+
+document.querySelector('#save').addEventListener('click',()=>{
+alert("Vous venez de sauvegarder l'image, contactez Paul pour la recevoir!")
+});
+
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  // add a zero in front of numbers<10
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+  t = setTimeout(function() {
+    startTime()
+  }, 500);
+}
+startTime();
+
+</script>
