@@ -1,3 +1,5 @@
+This project is under [GPLv3] (https://www.gnu.org/licenses/gpl-3.0.en.html)
+
 ![Alt text](https://github.com/paullecomte07/OpenScope/blob/master/.rdm_pictures/logo.png)
 
 
@@ -10,14 +12,14 @@ Here is the software architecture of the project with the different technologies
 
 
 # V0.1
-
-![Alt text](https://github.com/paullecomte07/OpenScope/blob/master/.rdm_pictures/V0.1.jpg)
 ### The system in place with small binoculars
+![Alt text](https://github.com/paullecomte07/OpenScope/blob/master/.rdm_pictures/V0.1.jpg)
 
 
 
-![Alt text](https://github.com/paullecomte07/OpenScope/blob/master/.rdm_pictures/mounting_system.jpg)
 ### Mounting system for the camera on the binoculars
+![Alt text](https://github.com/paullecomte07/OpenScope/blob/master/.rdm_pictures/mounting_system.jpg)
+
 
 # Basic example of image porcessing through binoculars : edge detection
 
